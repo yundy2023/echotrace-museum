@@ -81,11 +81,11 @@ Open `index.html` in a browser. The prototype uses only HTML, CSS, and JavaScrip
 - `styles.css`: visual interface design and responsive layout
 - `app.js`: interaction logic and scenario data
 - `low-fidelity-prototype.svg`: low-fidelity interface mockup
-- `desktop-preview.png`: desktop screenshot
-- `mobile-preview.png`: mobile screenshot
+- `desktop-preview.png`: desktop screenshot for the local submission package
+- `mobile-preview.png`: mobile screenshot for the local submission package
 
 ## Submission Mapping
 
 - **Clickable prototype link**: GitHub Pages link after publishing this repository.
 - **Interface mockups**: `low-fidelity-prototype.svg` and the high-fidelity web prototype screens.
-- **Screenshots**: `desktop-preview.png`, `mobile-preview.png`, and additional captured screens if required.
+- **Screenshots**: `desktop-preview.png`, `mobile-preview.png`, and additional captured screens can be submitted separately or uploaded to this repository through GitHub's upload interface.
