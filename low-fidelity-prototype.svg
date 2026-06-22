@@ -1,0 +1,346 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4200" height="2300" viewBox="0 0 4200 2300">
+  <style>
+    .bg{fill:#f4f4f0}
+    .frame{fill:#fff;stroke:#111;stroke-width:2}
+    .subframe{fill:#fffdf8;stroke:#111;stroke-width:1.8}
+    .header{fill:#ecece8;stroke:#222;stroke-width:1.1}
+    .navbox{fill:#f8f8f6;stroke:#222;stroke-width:1.05}
+    .card{fill:#f7f7f4;stroke:#222;stroke-width:1.1}
+    .input{fill:#fff;stroke:#222;stroke-width:1.15}
+    .primary{fill:#222;stroke:#111;stroke-width:1}
+    .secondary{fill:#e8e8e4;stroke:#111;stroke-width:1}
+    .line{stroke:#222;stroke-width:1.2;fill:none}
+    .soft{stroke:#777;stroke-width:.9;fill:none}
+    .title{font:700 18px Arial,sans-serif;fill:#111}
+    .main{font:700 15px Arial,sans-serif;fill:#111}
+    .h{font:700 11px Arial,sans-serif;fill:#111}
+    .t{font:10px Arial,sans-serif;fill:#111}
+    .tiny{font:9px Arial,sans-serif;fill:#333}
+    .white{font:700 9px Arial,sans-serif;fill:#fff}
+    .center{text-anchor:middle}
+  </style>
+  <rect class="bg" width="4200" height="2300"/>
+  <text class="title" x="54" y="42">EchoTrace Museum - Low-Fidelity Prototype V6</text>
+  <text class="tiny" x="54" y="64">Museum Information Retrieval | Search, retrieve, and explore collection knowledge | Two linked demo scenarios</text>
+
+  <!-- HOME -->
+  <g id="home" transform="translate(54,96)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">Home / Museum Search Hub</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="primary" x="216" y="92" width="70" height="24" rx="12"/><text class="white center" x="251" y="108">Home</text>
+    <rect class="secondary" x="300" y="92" width="112" height="24" rx="12"/><text class="tiny center" x="356" y="108">Time Search</text>
+    <rect class="secondary" x="426" y="92" width="108" height="24" rx="12"/><text class="tiny center" x="480" y="108">Evidence</text>
+    <rect class="secondary" x="548" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="600" y="108">Lens</text>
+    <rect class="secondary" x="666" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="718" y="108">Journey</text>
+    <rect class="secondary" x="274" y="124" width="112" height="24" rx="12"/><text class="tiny center" x="330" y="140">Blind Spot</text>
+    <rect class="secondary" x="400" y="124" width="130" height="24" rx="12"/><text class="tiny center" x="465" y="140">Guided Explain</text>
+    <rect class="secondary" x="544" y="124" width="118" height="24" rx="12"/><text class="tiny center" x="603" y="140">Voice Query</text>
+
+    <rect class="input" x="82" y="198" width="796" height="46" rx="23"/>
+    <text class="t" x="112" y="226">Search museum collection information: [user typed or selected scenario query]</text>
+    <rect class="primary" x="720" y="207" width="132" height="28" rx="14"/><text class="white center" x="786" y="225">Search</text>
+
+    <rect class="card" x="82" y="292" width="374" height="126" rx="5"/>
+    <text class="h" x="108" y="322">Example 1: Malay keris story</text>
+    <text class="tiny" x="108" y="348">Search story, material, age, cultural meaning.</text>
+    <text class="tiny" x="108" y="370">All pages update to keris object records and evidence.</text>
+    <rect class="primary" x="108" y="390" width="118" height="22" rx="11"/><text class="white center" x="167" y="405">Open Scenario</text>
+
+    <rect class="card" x="504" y="292" width="374" height="126" rx="5"/>
+    <text class="h" x="530" y="322">Example 2: Nyonya beadwork voices</text>
+    <text class="tiny" x="530" y="348">Search motifs, maker memory, oral history.</text>
+    <text class="tiny" x="530" y="370">All pages update to beadwork records and transcripts.</text>
+    <rect class="primary" x="530" y="390" width="118" height="22" rx="11"/><text class="white center" x="589" y="405">Open Scenario</text>
+
+    <rect class="card" x="82" y="456" width="796" height="58" rx="4"/>
+    <text class="h" x="106" y="480">Prototype logic</text>
+    <text class="tiny" x="206" y="480">One selected museum topic controls Time Search, Evidence, Lens, Journey, Risk, Guided Explain, Voice, and Saved Board.</text>
+  </g>
+
+  <!-- 1 TIME SEARCH -->
+  <g id="time-search" transform="translate(1094,96)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">1. Time-Layered Search</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="secondary" x="216" y="92" width="70" height="24" rx="12"/><text class="tiny center" x="251" y="108">Home</text>
+    <rect class="primary" x="300" y="92" width="112" height="24" rx="12"/><text class="white center" x="356" y="108">Time Search</text>
+    <rect class="secondary" x="426" y="92" width="108" height="24" rx="12"/><text class="tiny center" x="480" y="108">Evidence</text>
+    <rect class="secondary" x="548" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="600" y="108">Lens</text>
+    <rect class="secondary" x="666" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="718" y="108">Journey</text>
+    <rect class="secondary" x="274" y="124" width="112" height="24" rx="12"/><text class="tiny center" x="330" y="140">Blind Spot</text>
+    <rect class="secondary" x="400" y="124" width="130" height="24" rx="12"/><text class="tiny center" x="465" y="140">Guided Explain</text>
+    <rect class="secondary" x="544" y="124" width="118" height="24" rx="12"/><text class="tiny center" x="603" y="140">Voice Query</text>
+
+    <rect class="input" x="78" y="190" width="804" height="38" rx="19"/>
+    <text class="t" x="104" y="213">Current topic: [Malay keris story] or [Nyonya beadwork voices]</text>
+    <rect class="card" x="78" y="264" width="238" height="120" rx="4"/>
+    <text class="h" x="104" y="292">Historical Layer</text>
+    <text class="tiny" x="104" y="318">Keris: ceremonial and regional use</text>
+    <text class="tiny" x="104" y="340">Beadwork: domestic craft and identity</text>
+    <rect class="card" x="361" y="264" width="238" height="120" rx="4"/>
+    <text class="h" x="387" y="292">Collection Layer</text>
+    <text class="tiny" x="387" y="318">Keris: object record and metadata</text>
+    <text class="tiny" x="387" y="340">Beadwork: artifact plus oral record</text>
+    <rect class="card" x="644" y="264" width="238" height="120" rx="4"/>
+    <text class="h" x="670" y="292">Interpretation Layer</text>
+    <text class="tiny" x="670" y="318">Keris: guided object reading</text>
+    <text class="tiny" x="670" y="340">Beadwork: voice-based heritage access</text>
+    <rect class="card" x="78" y="424" width="804" height="66" rx="4"/>
+    <rect class="primary" x="110" y="446" width="126" height="24" rx="12"/><text class="white center" x="173" y="462">Evidence</text>
+    <rect class="secondary" x="258" y="446" width="114" height="24" rx="12"/><text class="tiny center" x="315" y="462">Lens View</text>
+    <rect class="secondary" x="394" y="446" width="124" height="24" rx="12"/><text class="tiny center" x="456" y="462">Build Journey</text>
+    <rect class="secondary" x="540" y="446" width="112" height="24" rx="12"/><text class="tiny center" x="596" y="462">Check Risk</text>
+    <rect class="secondary" x="674" y="446" width="136" height="24" rx="12"/><text class="tiny center" x="742" y="462">Knowledge Detail</text>
+  </g>
+
+  <!-- 2 EVIDENCE -->
+  <g id="evidence" transform="translate(2134,96)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">2. Evidence Trail</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="secondary" x="216" y="92" width="70" height="24" rx="12"/><text class="tiny center" x="251" y="108">Home</text>
+    <rect class="secondary" x="300" y="92" width="112" height="24" rx="12"/><text class="tiny center" x="356" y="108">Time Search</text>
+    <rect class="primary" x="426" y="92" width="108" height="24" rx="12"/><text class="white center" x="480" y="108">Evidence</text>
+    <rect class="secondary" x="548" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="600" y="108">Lens</text>
+    <rect class="secondary" x="666" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="718" y="108">Journey</text>
+    <rect class="secondary" x="274" y="124" width="112" height="24" rx="12"/><text class="tiny center" x="330" y="140">Blind Spot</text>
+    <rect class="secondary" x="400" y="124" width="130" height="24" rx="12"/><text class="tiny center" x="465" y="140">Guided Explain</text>
+    <rect class="secondary" x="544" y="124" width="118" height="24" rx="12"/><text class="tiny center" x="603" y="140">Voice Query</text>
+
+    <rect class="header" x="78" y="190" width="804" height="36" rx="3"/>
+    <text class="t" x="104" y="212">Selected layer: [Collection Layer] from Time Search</text>
+    <rect class="card" x="78" y="262" width="350" height="152" rx="4"/>
+    <text class="h" x="104" y="292">Evidence Claim</text>
+    <text class="tiny" x="104" y="318">Keris: artifact features + historical context</text>
+    <text class="tiny" x="104" y="340">Beadwork: object metadata + oral-history record</text>
+    <text class="tiny" x="104" y="362">Claim changes with selected scenario and layer.</text>
+    <rect class="secondary" x="104" y="382" width="112" height="22" rx="11"/><text class="tiny center" x="160" y="397">Save Board</text>
+    <rect class="card" x="470" y="262" width="190" height="152" rx="4"/>
+    <text class="h" x="494" y="292">Source 1</text>
+    <text class="tiny" x="494" y="318">Keris object catalogue</text>
+    <text class="tiny" x="494" y="340">or oral-history transcript</text>
+    <rect class="primary" x="494" y="382" width="112" height="22" rx="11"/><text class="white center" x="550" y="397">Source Preview</text>
+    <rect class="card" x="692" y="262" width="190" height="152" rx="4"/>
+    <text class="h" x="716" y="292">Source 2</text>
+    <text class="tiny" x="716" y="318">Exhibition note</text>
+    <text class="tiny" x="716" y="340">or collection image</text>
+    <rect class="secondary" x="716" y="382" width="112" height="22" rx="11"/><text class="tiny center" x="772" y="397">Compare</text>
+    <rect class="secondary" x="380" y="454" width="118" height="26" rx="13"/><text class="tiny center" x="439" y="471">Back: Time</text>
+    <rect class="secondary" x="520" y="454" width="138" height="26" rx="13"/><text class="tiny center" x="589" y="471">Guided Explain</text>
+  </g>
+
+  <!-- 3 LENS -->
+  <g id="lens" transform="translate(3174,96)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">3. Perspective Lens</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="secondary" x="216" y="92" width="70" height="24" rx="12"/><text class="tiny center" x="251" y="108">Home</text>
+    <rect class="secondary" x="300" y="92" width="112" height="24" rx="12"/><text class="tiny center" x="356" y="108">Time Search</text>
+    <rect class="secondary" x="426" y="92" width="108" height="24" rx="12"/><text class="tiny center" x="480" y="108">Evidence</text>
+    <rect class="primary" x="548" y="92" width="104" height="24" rx="12"/><text class="white center" x="600" y="108">Lens</text>
+    <rect class="secondary" x="666" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="718" y="108">Journey</text>
+    <rect class="secondary" x="274" y="124" width="112" height="24" rx="12"/><text class="tiny center" x="330" y="140">Blind Spot</text>
+    <rect class="secondary" x="400" y="124" width="130" height="24" rx="12"/><text class="tiny center" x="465" y="140">Guided Explain</text>
+    <rect class="secondary" x="544" y="124" width="118" height="24" rx="12"/><text class="tiny center" x="603" y="140">Voice Query</text>
+
+    <rect class="header" x="78" y="190" width="804" height="36" rx="3"/>
+    <text class="t" x="104" y="212">Topic node: [selected museum object or record set]</text>
+    <circle class="card" cx="480" cy="326" r="48"/>
+    <text class="h center" x="480" y="330">Object</text>
+    <rect class="secondary" x="136" y="276" width="142" height="36" rx="18"/><text class="tiny center" x="207" y="298">Visitor</text>
+    <rect class="secondary" x="682" y="276" width="142" height="36" rx="18"/><text class="tiny center" x="753" y="298">Student</text>
+    <rect class="secondary" x="136" y="368" width="142" height="36" rx="18"/><text class="tiny center" x="207" y="390">Curator</text>
+    <rect class="secondary" x="682" y="368" width="142" height="36" rx="18"/><text class="tiny center" x="753" y="390">Accessibility</text>
+    <line class="soft" x1="278" y1="294" x2="432" y2="318"/>
+    <line class="soft" x1="682" y1="294" x2="528" y2="318"/>
+    <line class="soft" x1="278" y1="386" x2="432" y2="338"/>
+    <line class="soft" x1="682" y1="386" x2="528" y2="338"/>
+    <rect class="primary" x="354" y="452" width="132" height="26" rx="13"/><text class="white center" x="420" y="469">Lens Detail</text>
+    <rect class="secondary" x="506" y="452" width="132" height="26" rx="13"/><text class="tiny center" x="572" y="469">Build Journey</text>
+  </g>
+
+  <!-- 4 JOURNEY -->
+  <g id="journey" transform="translate(54,734)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">4. Knowledge Journey Builder</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="secondary" x="216" y="92" width="70" height="24" rx="12"/><text class="tiny center" x="251" y="108">Home</text>
+    <rect class="secondary" x="300" y="92" width="112" height="24" rx="12"/><text class="tiny center" x="356" y="108">Time Search</text>
+    <rect class="secondary" x="426" y="92" width="108" height="24" rx="12"/><text class="tiny center" x="480" y="108">Evidence</text>
+    <rect class="secondary" x="548" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="600" y="108">Lens</text>
+    <rect class="primary" x="666" y="92" width="104" height="24" rx="12"/><text class="white center" x="718" y="108">Journey</text>
+    <rect class="secondary" x="274" y="124" width="112" height="24" rx="12"/><text class="tiny center" x="330" y="140">Blind Spot</text>
+    <rect class="secondary" x="400" y="124" width="130" height="24" rx="12"/><text class="tiny center" x="465" y="140">Guided Explain</text>
+    <rect class="secondary" x="544" y="124" width="118" height="24" rx="12"/><text class="tiny center" x="603" y="140">Voice Query</text>
+
+    <rect class="header" x="78" y="190" width="804" height="36" rx="3"/>
+    <text class="t" x="104" y="212">Goal: Build an evidence-based museum knowledge path</text>
+    <path class="line" d="M132 334 H260 V402 H388 V334 H516 V402 H644 V334 H772"/>
+    <rect class="card" x="102" y="310" width="108" height="50" rx="3"/><text class="tiny center" x="156" y="339">Object</text>
+    <rect class="card" x="230" y="378" width="108" height="50" rx="3"/><text class="tiny center" x="284" y="407">Context</text>
+    <rect class="card" x="358" y="310" width="108" height="50" rx="3"/><text class="tiny center" x="412" y="339">Evidence</text>
+    <rect class="card" x="486" y="378" width="108" height="50" rx="3"/><text class="tiny center" x="540" y="407">Perspective</text>
+    <rect class="card" x="614" y="310" width="108" height="50" rx="3"/><text class="tiny center" x="668" y="339">Summary</text>
+    <rect class="primary" x="336" y="468" width="126" height="26" rx="13"/><text class="white center" x="399" y="485">Save Board</text>
+    <rect class="secondary" x="486" y="468" width="126" height="26" rx="13"/><text class="tiny center" x="549" y="485">Check Risk</text>
+  </g>
+
+  <!-- 5 BLIND SPOT -->
+  <g id="blind" transform="translate(1094,734)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">5. Blind Spot Detector</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="secondary" x="216" y="92" width="70" height="24" rx="12"/><text class="tiny center" x="251" y="108">Home</text>
+    <rect class="secondary" x="300" y="92" width="112" height="24" rx="12"/><text class="tiny center" x="356" y="108">Time Search</text>
+    <rect class="secondary" x="426" y="92" width="108" height="24" rx="12"/><text class="tiny center" x="480" y="108">Evidence</text>
+    <rect class="secondary" x="548" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="600" y="108">Lens</text>
+    <rect class="secondary" x="666" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="718" y="108">Journey</text>
+    <rect class="primary" x="274" y="124" width="112" height="24" rx="12"/><text class="white center" x="330" y="140">Blind Spot</text>
+    <rect class="secondary" x="400" y="124" width="130" height="24" rx="12"/><text class="tiny center" x="465" y="140">Guided Explain</text>
+    <rect class="secondary" x="544" y="124" width="118" height="24" rx="12"/><text class="tiny center" x="603" y="140">Voice Query</text>
+
+    <rect class="header" x="78" y="190" width="804" height="36" rx="3"/>
+    <text class="t" x="104" y="212">Checks missing context before user trusts the retrieved information</text>
+    <circle class="soft" cx="480" cy="360" r="30"/>
+    <circle class="soft" cx="480" cy="360" r="60"/>
+    <circle class="soft" cx="480" cy="360" r="90"/>
+    <line class="soft" x1="480" y1="270" x2="480" y2="450"/>
+    <line class="soft" x1="390" y1="360" x2="570" y2="360"/>
+    <path class="line" d="M480 286 L548 340 L524 424 L442 438 L394 366 Z"/>
+    <text class="tiny center" x="480" y="252">Cultural context</text>
+    <text class="tiny" x="588" y="364">Consent</text>
+    <text class="tiny center" x="480" y="482">Evidence</text>
+    <text class="tiny" x="326" y="364">Accessibility</text>
+    <rect class="primary" x="336" y="506" width="132" height="26" rx="13"/><text class="white center" x="402" y="523">Fix Suggestions</text>
+    <rect class="secondary" x="492" y="506" width="132" height="26" rx="13"/><text class="tiny center" x="558" y="523">Explain</text>
+  </g>
+
+  <!-- 6 GUIDED EXPLAIN -->
+  <g id="explain" transform="translate(2134,734)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">6. Guided Explanation</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="secondary" x="216" y="92" width="70" height="24" rx="12"/><text class="tiny center" x="251" y="108">Home</text>
+    <rect class="secondary" x="300" y="92" width="112" height="24" rx="12"/><text class="tiny center" x="356" y="108">Time Search</text>
+    <rect class="secondary" x="426" y="92" width="108" height="24" rx="12"/><text class="tiny center" x="480" y="108">Evidence</text>
+    <rect class="secondary" x="548" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="600" y="108">Lens</text>
+    <rect class="secondary" x="666" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="718" y="108">Journey</text>
+    <rect class="secondary" x="274" y="124" width="112" height="24" rx="12"/><text class="tiny center" x="330" y="140">Blind Spot</text>
+    <rect class="primary" x="400" y="124" width="130" height="24" rx="12"/><text class="white center" x="465" y="140">Guided Explain</text>
+    <rect class="secondary" x="544" y="124" width="118" height="24" rx="12"/><text class="tiny center" x="603" y="140">Voice Query</text>
+
+    <rect class="card" x="118" y="206" width="724" height="194" rx="5"/>
+    <rect class="secondary" x="154" y="238" width="274" height="32" rx="16"/><text class="tiny center" x="291" y="258">User: explain current museum topic</text>
+    <rect class="secondary" x="360" y="304" width="430" height="58" rx="18"/>
+    <text class="tiny" x="384" y="328">Output changes by selected object, source, lens, and risk check.</text>
+    <text class="tiny" x="384" y="348">Uses collection records, exhibition notes, and oral-history evidence.</text>
+    <rect class="secondary" x="150" y="444" width="124" height="28" rx="14"/><text class="tiny center" x="212" y="462">Simple</text>
+    <rect class="secondary" x="300" y="444" width="124" height="28" rx="14"/><text class="tiny center" x="362" y="462">Academic</text>
+    <rect class="secondary" x="450" y="444" width="124" height="28" rx="14"/><text class="tiny center" x="512" y="462">Risk</text>
+    <rect class="primary" x="600" y="444" width="124" height="28" rx="14"/><text class="white center" x="662" y="462">Save Board</text>
+  </g>
+
+  <!-- 7 VOICE -->
+  <g id="voice" transform="translate(3174,734)">
+    <rect class="frame" width="960" height="560" rx="6"/>
+    <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
+    <text class="main" x="48" y="46">7. Voice Query Simulation</text>
+    <rect class="navbox" x="72" y="78" width="816" height="78" rx="8"/>
+    <rect class="secondary" x="216" y="92" width="70" height="24" rx="12"/><text class="tiny center" x="251" y="108">Home</text>
+    <rect class="secondary" x="300" y="92" width="112" height="24" rx="12"/><text class="tiny center" x="356" y="108">Time Search</text>
+    <rect class="secondary" x="426" y="92" width="108" height="24" rx="12"/><text class="tiny center" x="480" y="108">Evidence</text>
+    <rect class="secondary" x="548" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="600" y="108">Lens</text>
+    <rect class="secondary" x="666" y="92" width="104" height="24" rx="12"/><text class="tiny center" x="718" y="108">Journey</text>
+    <rect class="secondary" x="274" y="124" width="112" height="24" rx="12"/><text class="tiny center" x="330" y="140">Blind Spot</text>
+    <rect class="secondary" x="400" y="124" width="130" height="24" rx="12"/><text class="tiny center" x="465" y="140">Guided Explain</text>
+    <rect class="primary" x="544" y="124" width="118" height="24" rx="12"/><text class="white center" x="603" y="140">Voice Query</text>
+
+    <rect class="card" x="314" y="206" width="332" height="196" rx="8"/>
+    <circle class="secondary" cx="480" cy="260" r="30"/><text class="tiny center" x="480" y="264">Mic</text>
+    <text class="h center" x="480" y="308">Listening / Recording</text>
+    <rect class="input" x="350" y="336" width="260" height="32" rx="16"/>
+    <text class="tiny center" x="480" y="356">Detected: [museum information query]</text>
+    <rect class="primary" x="354" y="446" width="156" height="30" rx="15"/><text class="white center" x="432" y="465">Search: Time</text>
+    <rect class="secondary" x="534" y="446" width="88" height="30" rx="15"/><text class="tiny center" x="578" y="465">Edit Text</text>
+  </g>
+
+  <!-- SUPPORTING PAGES -->
+  <g id="support-detail" transform="translate(54,1390)">
+    <rect class="subframe" width="640" height="340" rx="5"/>
+    <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
+    <text class="main" x="38" y="39">1.1 Knowledge Detail</text>
+    <rect class="card" x="48" y="86" width="544" height="118" rx="3"/>
+    <text class="h" x="74" y="116">[Selected Museum Object Title]</text>
+    <text class="tiny" x="74" y="142">Keris: object story, symbolism, historical context.</text>
+    <text class="tiny" x="74" y="162">Beadwork: craft technique, family memory, oral history.</text>
+    <rect class="secondary" x="82" y="256" width="104" height="26" rx="13"/><text class="tiny center" x="134" y="273">Back: Time</text>
+    <rect class="primary" x="208" y="256" width="118" height="26" rx="13"/><text class="white center" x="267" y="273">Evidence</text>
+    <rect class="secondary" x="348" y="256" width="104" height="26" rx="13"/><text class="tiny center" x="400" y="273">Lens</text>
+    <rect class="secondary" x="474" y="256" width="104" height="26" rx="13"/><text class="tiny center" x="526" y="273">Journey</text>
+  </g>
+
+  <g id="support-source" transform="translate(754,1390)">
+    <rect class="subframe" width="640" height="340" rx="5"/>
+    <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
+    <text class="main" x="38" y="39">2.1 Source Preview</text>
+    <rect class="card" x="48" y="86" width="544" height="126" rx="3"/>
+    <text class="h" x="74" y="116">[Source Title]</text>
+    <text class="tiny" x="74" y="142">Shows reliability, source type, object ID, transcript ID, or exhibition note.</text>
+    <text class="tiny" x="74" y="162">Content changes by scenario and selected evidence card.</text>
+    <rect class="secondary" x="118" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="174" y="273">Back: Evidence</text>
+    <rect class="primary" x="264" y="256" width="112" height="26" rx="13"/><text class="white center" x="320" y="273">Save Board</text>
+    <rect class="secondary" x="410" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="466" y="273">Explain</text>
+  </g>
+
+  <g id="support-lens" transform="translate(1454,1390)">
+    <rect class="subframe" width="640" height="340" rx="5"/>
+    <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
+    <text class="main" x="38" y="39">3.1 Lens Explanation</text>
+    <rect class="card" x="48" y="86" width="544" height="126" rx="3"/>
+    <text class="h" x="74" y="116">[Selected Lens] + [Selected Object]</text>
+    <text class="tiny" x="74" y="142">Visitor, student, curator, and accessibility explanations differ by topic.</text>
+    <text class="tiny" x="74" y="162">Supports perspective taking before building the knowledge path.</text>
+    <rect class="secondary" x="118" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="174" y="273">Back: Lens</text>
+    <rect class="primary" x="264" y="256" width="112" height="26" rx="13"/><text class="white center" x="320" y="273">Journey</text>
+    <rect class="secondary" x="410" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="466" y="273">Save Board</text>
+  </g>
+
+  <g id="support-fix" transform="translate(2154,1390)">
+    <rect class="subframe" width="640" height="340" rx="5"/>
+    <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
+    <text class="main" x="38" y="39">5.1 Fix Suggestions</text>
+    <rect class="card" x="62" y="92" width="210" height="98" rx="3"/>
+    <text class="h" x="88" y="122">Detected Issue</text>
+    <text class="tiny" x="88" y="148">Keris: cultural interpretation gap</text>
+    <text class="tiny" x="88" y="168">Beadwork: oral-history context gap</text>
+    <rect class="card" x="368" y="92" width="210" height="98" rx="3"/>
+    <text class="h" x="394" y="122">Suggested Fix</text>
+    <text class="tiny" x="394" y="148">Add evidence labels</text>
+    <text class="tiny" x="394" y="168">Add transcript and consent cues</text>
+    <rect class="secondary" x="118" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="174" y="273">Back: Risk</text>
+    <rect class="primary" x="264" y="256" width="112" height="26" rx="13"/><text class="white center" x="320" y="273">Explain</text>
+    <rect class="secondary" x="410" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="466" y="273">Save Board</text>
+  </g>
+
+  <g id="saved-board" transform="translate(2854,1390)">
+    <rect class="subframe" width="960" height="340" rx="5"/>
+    <rect class="header" x="22" y="18" width="916" height="32" rx="3"/>
+    <text class="main" x="38" y="39">S. Saved Knowledge Board</text>
+    <rect class="card" x="58" y="88" width="150" height="70" rx="3"/><text class="h center" x="133" y="116">Saved Claim</text><text class="tiny center" x="133" y="136">Delete</text>
+    <rect class="card" x="238" y="88" width="150" height="70" rx="3"/><text class="h center" x="313" y="116">Saved Source</text><text class="tiny center" x="313" y="136">Delete</text>
+    <rect class="card" x="418" y="88" width="150" height="70" rx="3"/><text class="h center" x="493" y="116">Lens Note</text><text class="tiny center" x="493" y="136">Delete</text>
+    <rect class="card" x="598" y="88" width="150" height="70" rx="3"/><text class="h center" x="673" y="116">Risk Fix</text><text class="tiny center" x="673" y="136">Delete</text>
+    <rect class="card" x="238" y="190" width="150" height="58" rx="3"/><text class="h center" x="313" y="218">Max 6 Items</text>
+    <rect class="card" x="418" y="190" width="150" height="58" rx="3"/><text class="h center" x="493" y="218">PDF Preview</text>
+    <rect class="secondary" x="604" y="206" width="112" height="26" rx="13"/><text class="tiny center" x="660" y="223">Back: Home</text>
+    <rect class="primary" x="738" y="206" width="112" height="26" rx="13"/><text class="white center" x="794" y="223">Export</text>
+  </g>
+</svg>
