@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EchoTrace Museum | High-Fidelity Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">ET</div>
+          <div>
+            <p class="eyebrow">Museum Information Retrieval</p>
+            <h1>EchoTrace Museum</h1>
+          </div>
+        </div>
+        <div class="status-strip" aria-label="prototype status">
+          <span class="status-dot"></span>
+          <span>High-fidelity web prototype</span>
+        </div>
+      </header>
+
+      <nav class="main-nav" aria-label="Primary prototype pages">
+        <button class="nav-btn is-active" data-page="home">Home</button>
+        <button class="nav-btn" data-page="time">Search: Time</button>
+        <button class="nav-btn" data-page="evidence">Evidence: Sources</button>
+        <button class="nav-btn" data-page="lens">Lens: Perspective</button>
+        <button class="nav-btn" data-page="journey">Journey: Build</button>
+        <button class="nav-btn" data-page="blind">Risk: Blind Spot</button>
+        <button class="nav-btn" data-page="ai">AI: Explain</button>
+        <button class="nav-btn" data-page="voice">Voice: Query</button>
+      </nav>
+
+      <main>
+        <section class="screen is-active" id="page-home" aria-labelledby="home-title">
+          <div class="hero-grid">
+            <div class="hero-panel">
+              <p class="section-kicker">Knowledge retrieval prototype</p>
+              <h2 id="home-title">Search, retrieve, and explore museum collection knowledge effectively.</h2>
+              <p class="lead">
+                Choose one museum information task and follow the same topic through time-layered search, source evidence, user perspective, risk checking, AI explanation, and saved report output.
+              </p>
+              <div class="search-bar large">
+                <input id="home-query" type="text" value="Search Malay keris story, material, age, and cultural meaning." aria-label="Museum information question" />
+                <button class="primary-btn" data-action="run-search">Search: Time</button>
+              </div>
+              <div class="quick-chips" aria-label="sample topics">
+                <button data-scenario="keris">Malay keris story</button>
+                <button data-scenario="beadwork">Nyonya beadwork voices</button>
+              </div>
+            </div>
+            <aside class="overview-panel">
+              <div class="mini-map">
+                <div class="map-node active">Search</div>
+                <div class="map-line"></div>
+                <div class="map-node">Evidence</div>
+                <div class="map-line"></div>
+                <div class="map-node">Lens</div>
+                <div class="map-line"></div>
+                <div class="map-node">Journey</div>
+                <div class="map-line"></div>
+                <div class="map-node">Risk</div>
+              </div>
+              <div class="metric-grid">
+                <div><strong>7</strong><span>Main features</span></div>
+                <div><strong>4</strong><span>Support pages</span></div>
+                <div><strong>1</strong><span>Saved board</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="screen" id="page-time" aria-labelledby="time-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">1. Time-Layered Search</p>
+              <h2 id="time-title">Retrieve museum knowledge across historical, collection, and interpretation layers.</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="home">Home</button>
+          </div>
+          <div class="search-bar">
+            <input id="time-query" type="text" aria-label="editable search query" />
+            <button class="primary-btn" data-action="update-results">Update Results</button>
+          </div>
+          <div class="time-grid">
+            <article class="layer-card" data-layer="past">
+              <span class="layer-label">Past Layer</span>
+              <h3>Museum practice before intelligent services</h3>
+              <p>Static labels, physical tours, and limited personalization shaped early visitor learning.</p>
+              <button class="text-link" data-action="select-result" data-result="past">Use this result</button>
+            </article>
+            <article class="layer-card is-selected" data-layer="present">
+              <span class="layer-label">Present Layer</span>
+              <h3>Current digital and hybrid museum cases</h3>
+              <p>Mobile guides, recommendation systems, and AR overlays support mixed on-site and online learning.</p>
+              <button class="text-link" data-action="select-result" data-result="present">Use this result</button>
+            </article>
+            <article class="layer-card" data-layer="future">
+              <span class="layer-label">Interpretation Layer</span>
+              <h3>Interpretation Layer: guided object explanation</h3>
+              <p>The system explains collection information through source-linked summaries, object context, and visitor-friendly interpretation.</p>
+              <button class="text-link" data-action="select-result" data-result="future">Use this result</button>
+            </article>
+          </div>
+          <div class="action-dock">
+            <button class="primary-btn" data-page-jump="evidence">Evidence Trail</button>
+            <button class="secondary-btn" data-page-jump="lens">Lens View</button>
+            <button class="secondary-btn" data-page-jump="journey">Build Journey</button>
+            <button class="secondary-btn" data-page-jump="blind">Check Risk</button>
+            <button class="secondary-btn" data-page-jump="detail">Knowledge Detail</button>
+          </div>
+        </section>
+
+        <section class="screen" id="page-evidence" aria-labelledby="evidence-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">2. Evidence Trail</p>
+              <h2 id="evidence-title">Show why a result is trustworthy before users accept it.</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="time">Back: Time</button>
+          </div>
+          <div class="selected-topic">
+            <span>Selected result</span>
+            <strong id="selected-result-label">Current digital and hybrid museum cases</strong>
+          </div>
+          <div class="evidence-layout">
+            <article class="claim-card">
+              <p class="section-kicker">Dynamic claim</p>
+              <h3 id="claim-title">A museum search result is stronger when object facts are connected with traceable evidence.</h3>
+              <p id="claim-copy">The interface should help users see the source, reliability level, and museum context behind each retrieved explanation.</p>
+              <button class="secondary-btn" data-action="save" data-save-kind="Claim">Save Board</button>
+            </article>
+            <div class="source-stack">
+              <article class="source-card">
+                <span class="source-type">Academic source</span>
+              <h3>Museum Collection Information Source</h3>
+                <p>Reliability: High | Use: interaction design rationale</p>
+                <button class="primary-btn compact" data-page-jump="source">Source Preview</button>
+              </article>
+              <article class="source-card">
+                <span class="source-type case">Museum report</span>
+                <h3>Digital accessibility in hybrid exhibitions</h3>
+                <p>Reliability: Medium | Use: practical implementation case</p>
+                <button class="secondary-btn compact" data-action="compare">Compare</button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="page-lens" aria-labelledby="lens-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">3. Perspective Lens</p>
+              <h2 id="lens-title">Reframe one topic through different user needs.</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="home">Home</button>
+          </div>
+          <div class="lens-board">
+            <button class="lens-pill" data-lens="Visitor">Visitor Lens</button>
+            <button class="lens-pill" data-lens="Student">Student Lens</button>
+            <button class="lens-pill is-active" data-lens="Curator">Curator Lens</button>
+            <button class="lens-pill" data-lens="Accessibility">Accessibility Lens</button>
+            <div class="topic-orbit">
+              <span>Topic Node</span>
+              <strong id="lens-topic">AR keris reconstruction and historical context</strong>
+            </div>
+          </div>
+          <div class="insight-panel">
+            <h3 id="lens-output-title">Curator perspective</h3>
+            <p id="lens-output">The curator needs evidence control, citation visibility, and a way to prevent unsupported interpretation of collection meaning.</p>
+            <button class="primary-btn" data-page-jump="lens-detail">Lens Detail</button>
+            <button class="secondary-btn" data-page-jump="journey">Build Journey</button>
+          </div>
+        </section>
+
+        <section class="screen" id="page-journey" aria-labelledby="journey-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">4. Knowledge Journey Builder</p>
+              <h2 id="journey-title">Convert search results into a structured learning path.</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="home">Home</button>
+          </div>
+          <div class="journey-toolbar">
+            <label>Goal
+              <select id="journey-goal">
+                <option>Build an evidence-based museum knowledge path</option>
+                <option>Prepare a visitor learning route</option>
+                <option>Support inclusive cultural heritage access</option>
+              </select>
+            </label>
+            <button class="secondary-btn" data-action="regenerate-journey">Regenerate</button>
+          </div>
+          <div class="journey-path" aria-label="knowledge journey path">
+            <article><span>01</span><strong>Problem</strong><p>Define user need and museum context.</p></article>
+            <article><span>02</span><strong>Evidence</strong><p>Attach cited sources and reliability cues.</p></article>
+            <article><span>03</span><strong>Lens</strong><p>Review from visitor, student, curator, and accessibility views.</p></article>
+            <article><span>04</span><strong>Risk</strong><p>Check privacy, bias, culture, and cognitive load.</p></article>
+            <article><span>05</span><strong>Output</strong><p>Save a clear museum knowledge summary for later use.</p></article>
+          </div>
+          <div class="action-dock">
+            <button class="primary-btn" data-action="save" data-save-kind="Journey">Save Board</button>
+            <button class="secondary-btn" data-page-jump="blind">Check Risk</button>
+          </div>
+        </section>
+
+        <section class="screen" id="page-blind" aria-labelledby="blind-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">5. Blind Spot Detector</p>
+              <h2 id="blind-title">Identify missing concerns before the user trusts the answer.</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="home">Home</button>
+          </div>
+          <div class="risk-layout">
+            <div class="radar-card">
+              <svg viewBox="0 0 360 360" role="img" aria-label="blind spot radar">
+                <polygon points="180,42 302,112 302,248 180,318 58,248 58,112" class="radar-grid"></polygon>
+                <polygon points="180,88 260,130 236,252 158,270 86,206 112,128" class="radar-shape"></polygon>
+                <line x1="180" y1="42" x2="180" y2="318"></line>
+                <line x1="58" y1="112" x2="302" y2="248"></line>
+                <line x1="302" y1="112" x2="58" y2="248"></line>
+                <text x="180" y="28">Accessibility</text>
+                <text x="312" y="112">Privacy</text>
+                <text x="306" y="264">Reliability</text>
+                <text x="180" y="344">Cognitive load</text>
+                <text x="16" y="264">Culture</text>
+                <text x="22" y="112">Bias</text>
+              </svg>
+            </div>
+            <aside class="risk-list">
+              <article class="risk-item high"><strong>High</strong><span>Accessibility evidence is thin.</span></article>
+              <article class="risk-item medium"><strong>Medium</strong><span>Privacy implication needs a clearer consent step.</span></article>
+              <article class="risk-item low"><strong>Low</strong><span>Cultural interpretation risk is noted but not resolved.</span></article>
+              <button class="primary-btn" data-page-jump="fix">Fix Suggestions</button>
+              <button class="secondary-btn" data-page-jump="ai">AI Explain</button>
+            </aside>
+          </div>
+        </section>
+
+        <section class="screen" id="page-ai" aria-labelledby="ai-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">6. Guided AI Explanation</p>
+              <h2 id="ai-title">Generate a controlled explanation with traceable evidence.</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="home">Home</button>
+          </div>
+          <div class="chat-shell">
+            <div class="message user">Explain this topic for <span id="ai-mode-label">Academic Mode</span>.</div>
+            <div class="message ai" id="ai-output">
+              The assistant explains the selected museum topic using object records, exhibition notes, oral-history evidence, and clear source cues.
+            </div>
+          </div>
+          <div class="mode-row" role="group" aria-label="AI explanation modes">
+            <button class="mode-btn" data-mode="Simple">Simple Mode</button>
+            <button class="mode-btn is-active" data-mode="Academic">Academic Mode</button>
+            <button class="mode-btn" data-mode="Risk">Risk Mode</button>
+            <button class="primary-btn" data-action="save" data-save-kind="AI note">Save Board</button>
+          </div>
+        </section>
+
+        <section class="screen" id="page-voice" aria-labelledby="voice-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">7. Voice Query Simulation</p>
+              <h2 id="voice-title">Let users retrieve knowledge through a spoken query.</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="home">Home</button>
+          </div>
+          <div class="voice-panel">
+            <button class="mic-button" data-action="listen" aria-label="simulate voice input">
+              <span></span>
+            </button>
+            <h3 id="voice-state">Ready to listen</h3>
+            <label class="detected-box">Detected text
+              <input id="voice-query" type="text" value="How can voice retrieval help visually impaired visitors explore Nyonya beadwork and oral-history collections?" />
+            </label>
+            <div class="action-dock">
+              <button class="primary-btn" data-action="voice-search">Search: Time</button>
+              <button class="secondary-btn" data-action="edit-voice">Edit Text</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen support-screen" id="page-detail" aria-labelledby="detail-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">1.1 Supporting Page</p>
+              <h2 id="detail-title">Knowledge Detail</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="time">Back: Time</button>
+          </div>
+          <article class="detail-card">
+            <h3 id="detail-heading">AR keris reconstruction and historical context</h3>
+            <p id="detail-copy">This supporting page gives users more context before they decide whether to inspect evidence, apply a perspective lens, or build a knowledge journey.</p>
+            <div class="action-dock">
+              <button class="primary-btn" data-page-jump="evidence">Evidence Trail</button>
+              <button class="secondary-btn" data-page-jump="lens">Lens View</button>
+              <button class="secondary-btn" data-page-jump="journey">Build Journey</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="screen support-screen" id="page-source" aria-labelledby="source-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">2.1 Supporting Page</p>
+              <h2 id="source-title">Source Preview</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="evidence">Back: Evidence</button>
+          </div>
+          <article class="detail-card source-preview">
+            <span class="source-type">Academic source</span>
+            <h3 id="source-heading">Museum Collection Information Source</h3>
+            <dl>
+              <div><dt>Reliability</dt><dd id="source-reliability">High</dd></div>
+              <div><dt>Use in prototype</dt><dd id="source-use">Supports interaction design justification</dd></div>
+              <div><dt>Citation cue</dt><dd id="source-cue">Author, year, title, publication, access link</dd></div>
+            </dl>
+            <button class="primary-btn" data-action="save" data-save-kind="Source">Save Board</button>
+            <button class="secondary-btn" data-page-jump="ai">AI Explain</button>
+          </article>
+        </section>
+
+        <section class="screen support-screen" id="page-lens-detail" aria-labelledby="lens-detail-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">3.1 Supporting Page</p>
+              <h2 id="lens-detail-title">Lens Explanation</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="lens">Back: Lens</button>
+          </div>
+          <article class="detail-card">
+            <h3 id="lens-detail-heading">Curator Lens + Selected Topic</h3>
+            <p id="lens-detail-copy">This view explains how the selected topic affects collection interpretation, evidence control, and curatorial responsibility.</p>
+            <button class="primary-btn" data-page-jump="journey">Build Journey</button>
+            <button class="secondary-btn" data-action="save" data-save-kind="Lens note">Save Board</button>
+          </article>
+        </section>
+
+        <section class="screen support-screen" id="page-fix" aria-labelledby="fix-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">5.1 Supporting Page</p>
+              <h2 id="fix-title">Fix Suggestions</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="blind">Back: Risk</button>
+          </div>
+          <div class="fix-grid">
+            <article>
+              <span class="risk-badge">Detected issue</span>
+              <h3 id="fix-issue-heading">Interpretation evidence gap</h3>
+              <p id="fix-issue-copy">The retrieved result needs clearer cultural and historical evidence before visitors accept the interpretation.</p>
+            </article>
+            <article>
+              <span class="risk-badge solution">Suggested fix</span>
+              <h3 id="fix-solution-heading">Add curator-approved artifact context</h3>
+              <p id="fix-solution-copy">Include source notes, conservation records, and cultural interpretation checks.</p>
+            </article>
+          </div>
+          <div class="action-dock">
+            <button class="primary-btn" data-page-jump="ai">AI Explain</button>
+            <button class="secondary-btn" data-action="save" data-save-kind="Risk fix">Save Board</button>
+          </div>
+        </section>
+
+        <section class="screen support-screen" id="page-board" aria-labelledby="board-title">
+          <div class="screen-header">
+            <div>
+              <p class="section-kicker">Supporting Output</p>
+              <h2 id="board-title">Saved Knowledge Board</h2>
+            </div>
+            <button class="secondary-btn" data-page-jump="home">Back: Home</button>
+          </div>
+          <div class="board-grid" id="board-grid">
+            <article><span>Claims</span><strong>Evidence-based claim from page 2</strong></article>
+            <article><span>Sources</span><strong>Source citation from page 2.1</strong></article>
+            <article><span>Lens notes</span><strong>Curator perspective note</strong></article>
+            <article><span>AI notes</span><strong>Guided explanation summary</strong></article>
+            <article><span>Journey</span><strong>Five-step knowledge journey</strong></article>
+            <article><span>Risks</span><strong>Accessibility and privacy blind spots</strong></article>
+          </div>
+          <div class="action-dock">
+            <button class="secondary-btn" data-action="organise">Organise</button>
+            <button class="primary-btn" data-action="export-board">Export</button>
+          </div>
+          <article class="export-preview" id="export-preview" hidden>
+            <div class="export-head">
+              <h3>PDF Export Preview</h3>
+              <button class="secondary-btn compact" data-action="close-export">Close</button>
+            </div>
+            <pre id="export-content"></pre>
+            <button class="primary-btn" data-action="print-export">Print / Save as PDF</button>
+          </article>
+        </section>
+      </main>
+
+      <aside class="toast" id="toast" role="status" aria-live="polite"></aside>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
