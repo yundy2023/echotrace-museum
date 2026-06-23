@@ -11,7 +11,6 @@
     .secondary{fill:#e8e8e4;stroke:#111;stroke-width:1}
     .line{stroke:#222;stroke-width:1.2;fill:none}
     .soft{stroke:#777;stroke-width:.9;fill:none}
-    .title{font:700 18px Arial,sans-serif;fill:#111}
     .main{font:700 15px Arial,sans-serif;fill:#111}
     .h{font:700 11px Arial,sans-serif;fill:#111}
     .t{font:10px Arial,sans-serif;fill:#111}
@@ -21,7 +20,7 @@
   </style>
   <rect class="bg" width="4200" height="2300"/>
   <!-- HOME -->
-  <g id="home" transform="translate(54,96)">
+  <g id="home" transform="translate(54,40)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">Home / Museum Search Hub</text>
@@ -57,7 +56,7 @@
   </g>
 
   <!-- 1 TIME SEARCH -->
-  <g id="time-search" transform="translate(1094,96)">
+  <g id="time-search" transform="translate(1094,40)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">1. Time-Layered Search</text>
@@ -94,7 +93,7 @@
   </g>
 
   <!-- 2 EVIDENCE -->
-  <g id="evidence" transform="translate(2134,96)">
+  <g id="evidence" transform="translate(2134,40)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">2. Evidence Trail</text>
@@ -131,7 +130,7 @@
   </g>
 
   <!-- 3 LENS -->
-  <g id="lens" transform="translate(3174,96)">
+  <g id="lens" transform="translate(3174,40)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">3. Perspective Lens</text>
@@ -162,7 +161,7 @@
   </g>
 
   <!-- 4 JOURNEY -->
-  <g id="journey" transform="translate(54,734)">
+  <g id="journey" transform="translate(54,678)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">4. Knowledge Journey Builder</text>
@@ -189,7 +188,7 @@
   </g>
 
   <!-- 5 BLIND SPOT -->
-  <g id="blind" transform="translate(1094,734)">
+  <g id="blind" transform="translate(1094,678)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">5. Blind Spot Detector</text>
@@ -220,7 +219,7 @@
   </g>
 
   <!-- 6 GUIDED EXPLAIN -->
-  <g id="explain" transform="translate(2134,734)">
+  <g id="explain" transform="translate(2134,678)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">6. Guided Explanation</text>
@@ -246,7 +245,7 @@
   </g>
 
   <!-- 7 VOICE -->
-  <g id="voice" transform="translate(3174,734)">
+  <g id="voice" transform="translate(3174,678)">
     <rect class="frame" width="960" height="560" rx="6"/>
     <rect class="header" x="28" y="22" width="904" height="38" rx="3"/>
     <text class="main" x="48" y="46">7. Voice Query Simulation</text>
@@ -270,7 +269,7 @@
   </g>
 
   <!-- SUPPORTING PAGES -->
-  <g id="support-detail" transform="translate(54,1390)">
+  <g id="support-detail" transform="translate(54,1334)">
     <rect class="subframe" width="640" height="340" rx="5"/>
     <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
     <text class="main" x="38" y="39">1.1 Knowledge Detail</text>
@@ -284,7 +283,7 @@
     <rect class="secondary" x="474" y="256" width="104" height="26" rx="13"/><text class="tiny center" x="526" y="273">Journey</text>
   </g>
 
-  <g id="support-source" transform="translate(754,1390)">
+  <g id="support-source" transform="translate(754,1334)">
     <rect class="subframe" width="640" height="340" rx="5"/>
     <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
     <text class="main" x="38" y="39">2.1 Source Preview</text>
@@ -297,7 +296,7 @@
     <rect class="secondary" x="410" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="466" y="273">Explain</text>
   </g>
 
-  <g id="support-lens" transform="translate(1454,1390)">
+  <g id="support-lens" transform="translate(1454,1334)">
     <rect class="subframe" width="640" height="340" rx="5"/>
     <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
     <text class="main" x="38" y="39">3.1 Lens Explanation</text>
@@ -310,7 +309,7 @@
     <rect class="secondary" x="410" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="466" y="273">Save Board</text>
   </g>
 
-  <g id="support-fix" transform="translate(2154,1390)">
+  <g id="support-fix" transform="translate(2154,1334)">
     <rect class="subframe" width="640" height="340" rx="5"/>
     <rect class="header" x="22" y="18" width="596" height="32" rx="3"/>
     <text class="main" x="38" y="39">5.1 Fix Suggestions</text>
@@ -327,7 +326,7 @@
     <rect class="secondary" x="410" y="256" width="112" height="26" rx="13"/><text class="tiny center" x="466" y="273">Save Board</text>
   </g>
 
-  <g id="saved-board" transform="translate(2854,1390)">
+  <g id="saved-board" transform="translate(2854,1334)">
     <rect class="subframe" width="960" height="340" rx="5"/>
     <rect class="header" x="22" y="18" width="916" height="32" rx="3"/>
     <text class="main" x="38" y="39">S. Saved Knowledge Board</text>
