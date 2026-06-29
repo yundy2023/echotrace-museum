@@ -1,5 +1,6 @@
 # EchoTrace Museum 
 **Web demo High-Fidelity Prototype link：https://yun7791.github.io/echotrace-museum/**
+
 **Interface Mockup link https://www.figma.com/community/file/1653305970943807552**
 
 EchoTrace Museum is a high-fidelity web prototype for museum information retrieval. It supports the Future Museum interactive system theme by helping users search, retrieve, evaluate, and explore museum-related information through a structured, evidence-aware interface.
